@@ -13,6 +13,9 @@ rom.nesをファミコンのカートリッジに書き込みます。プログ�
 ## Screenshot
 <img width="514" height="452" alt="Image" src="https://github.com/user-attachments/assets/5706e38e-05d5-498b-b792-cf0a18aaceb9" />
 
+## 通信コントローラのタイミングチャート
+<img width="1240" height="371" alt="Image" src="https://github.com/user-attachments/assets/3abbcab0-b9a4-4292-9d40-d324a7439969" />
+
 ## 参考資料
 Nesdev Wiki
 
