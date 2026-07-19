@@ -1,6 +1,9 @@
 # 通信コントローラ(HVC-051)の動作テスト
 ## 概要
 ファミコンの周辺機器、「通信コントローラ(HVC-051)」の動作テストをするためのプログラムです。
+## ビルド方法
+開発環境はcc65 C compilerを使っています。推奨するOSはWindowsです。
+build.batを実行すると、ROMイメージファイルの「rom.nes」が作成されます。
 
 ## 使い方
 rom.nesをファミコンのカートリッジに書き込みます。プログラムROMは32KB。キャラクターRAMは8KB(SRAM)です。
@@ -12,4 +15,5 @@ rom.nesをファミコンのカートリッジに書き込みます。プログ�
 
 ## 参考資料
 Nesdev Wiki
+
 https://www.nesdev.org/wiki/Famicom_Network_Controller
