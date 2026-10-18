@@ -1,4 +1,4 @@
-# 通信コントローラ(HVC-051)の動作テスト
+# 通信コントローラ(HVC-051)の動作テスト for FC
 ## 概要
 ファミコンの周辺機器、「通信コントローラ(HVC-051)」の動作テストをするプログラムです。
 
@@ -8,10 +8,10 @@ build.bat：ビルドするバッチファイルです。開発環境は「cc65�
 rom.nes：ROMイメージファイル。
 
 ## 使い方
-推奨するカートリッジはMapper 0。PRG-ROM 32KB(FLASH)、CHR-RAM 8KB(SRAM)。
+対応カートリッジはMapper 0。PRG-ROM 32KB(FLASH)、CHR-RAM 8KB(SRAM)。
 https://github.com/nicotakuya/diyfccartridge
 
-rom.nesをカートリッジに書き込みます。ファミコンにカートリッジを挿し込みます。
+rom.nesをカートリッジに書き込んでファミコンで動かします。
 
 ファミコンの拡張端子(EXPAND CONNECTOR)に通信コントローラを接続します。
 
@@ -24,6 +24,6 @@ rom.nesをカートリッジに書き込みます。ファミコンにカート�
 <img width="1240" height="371" alt="Image" src="https://github.com/user-attachments/assets/3abbcab0-b9a4-4292-9d40-d324a7439969" />
 
 ## 参考資料
-Nesdev Wiki
+NesDev Wiki
 
 https://www.nesdev.org/wiki/Famicom_Network_Controller
