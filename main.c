@@ -3,10 +3,8 @@
 #include "fcsub.h"     // ファミコン用ライブラリ
 #include "pattern.h"   // パターンテーブル用データ
 
-extern void waitvsync (void); // Vブランク待ち
-
 void title(void);
-char NesMain(void);
+void NesMain(void);
 
 const char palette[] = { // カラーテーブル
     C_BLACK, C_GRAY   , C_GREEN     , C_WHITE ,   // BGパレット0
@@ -64,7 +62,7 @@ void title(void)
         bg_printstr(x,y,(char *)strbutton[i]);
     }
     ppu_enable(1); // 表示を有効化
-    waitvsync();          // Vブランク待ち
+    ppu_vsync();          // Vブランク待ち
 }
 
 unsigned long player1; // 
@@ -100,7 +98,7 @@ void tsushin_ctr(void)
 }
 
 // メイン関数
-char NesMain(void)
+void NesMain(void)
 {
     unsigned char i,x,y;
     unsigned char c;
@@ -136,11 +134,10 @@ char NesMain(void)
         mask >>= 1;
         i = (i+1) % 24;
 
-        waitvsync();          // Vブランク待ち
+        ppu_vsync();          // Vブランク待ち
         bg_printch(x,y,c);
         bg_scroll(0,0);
         sp_dmastart();        // OMA DMA転送開始
     }
-    return 0;
 }
 
